@@ -3,7 +3,7 @@ import { Observable } from "rxjs";
 const observable1 = Observable.create(function subscribe(observer) {
   /* 
       subscribe function 
-      ... will only be executed when the Obsevable is subscribed
+      ... will only be executed when the Observable is subscribed
       next() provides a value to the observer
       ... synchronously
   */
@@ -31,8 +31,7 @@ const observable1 = Observable.create(function subscribe(observer) {
 
 const observable2 = Observable.create(function subscribe(observer) {
   observer.next("A"); // emit value synchronously
-  setTimeout(() => {
-    // emit value asynchronously
+  setTimeout(() => {  // emit value asynchronously
     observer.next("B");
   }, 1000);
   /*
