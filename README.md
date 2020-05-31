@@ -1,3 +1,3 @@
-# rxjs-glhzbz
+# stonelouse-rxjs-concepts
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/rxjs-glhzbz)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stonelouse-rxjs-concepts)
