@@ -2,6 +2,7 @@ import { Observable, Subscriber } from "rxjs";
 
 let outer: number = 1;
 
+// Observable.create is meanwhile deprecated; use constructor instead.
 const observable1: Observable<number> = Observable.create((subscriber: Subscriber<number>) => {
   let inner: number = 10;
   subscriber.next(outer++);

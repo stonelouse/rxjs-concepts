@@ -6,17 +6,8 @@ const observer = {
   complete: () => console.log("completed")
 };
 
-Observable.create((subscriber: Subscriber<number>) =>
-  subscriber.next(42)
-).subscribe(observer);
-Observable.create((subscriber: Subscriber<unknown>) =>
-  subscriber.error(new Error("666"))
-).subscribe(observer);
-Observable.create((subscriber: Subscriber<unknown>) =>
-  subscriber.complete()
-).subscribe(observer);
-
 export function main() {
+  // Observable.create is meanwhile deprecated; use constructor instead.
   Observable.create((subscriber: Subscriber<number>) =>
     subscriber.next(42)
   ).subscribe(observer);

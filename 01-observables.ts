@@ -1,5 +1,6 @@
 import { Observable } from "rxjs";
 
+// Observable.create is meanwhile deprecated; use constructor instead.
 const observable1 = Observable.create(function subscribe(observer) {
   /* 
       subscribe function 

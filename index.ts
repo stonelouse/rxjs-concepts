@@ -5,8 +5,10 @@ import { main as observables04 } from "./04-unsubscribe";
 import { main as operators05 } from "./05-own-operator";
 import { main as operators06 } from "./06-own-map-operator.js";
 import { main as operators07 } from "./07-subscription-chain-example";
+import { main as subjects08 } from "./08-subject";
 
-operators07();
+subjects08();
+// operators07();
 // operators06();
 // operators05();
 // observables04();
